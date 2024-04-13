@@ -1,0 +1,14 @@
+{
+  "name": "ruin",
+  "version": "1.0.0",
+  "description": "jewelry, silver, sculpture, vessel, bronze, brass",
+  "main": "index.js",
+  "scripts": {
+    "test": "run tests"
+  },
+  "author": "chris young",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
