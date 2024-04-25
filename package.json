@@ -2,13 +2,25 @@
   "name": "ruin",
   "version": "1.0.0",
   "description": "jewelry, silver, sculpture, vessel, bronze, brass",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "run tests"
+    "test": "mocha"
   },
   "author": "chris young",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.19.2"
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "mongoose": "^8.3.1",
+    "passport": "^0.7.0",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "chai": "^5.1.0",
+    "mocha": "^10.4.0"
   }
 }
