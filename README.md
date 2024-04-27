@@ -150,6 +150,9 @@ Here's a cheat sheet to help you use `mongosh` on the command line for your Mong
 - **Insert a document**: `db.<collectionName>.insertOne({<document>})`
 - **Insert multiple documents**: `db.<collectionName>.insertMany([{<document1>}, {<document2>}, ...])`
 - **Find documents**: `db.<collectionName>.find({<query>})`
+- **Find all products**: 
+- `db.products.find().pretty()`
+
 - **Find a single document**: `db.<collectionName>.findOne({<query>})`
 - **Update documents**: `db.<collectionName>.updateOne({<query>}, { $set: {<update>} })`
 - **Delete a document**: `db.<collectionName>.deleteOne({<query>})`
