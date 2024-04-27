@@ -142,8 +142,8 @@ app.get('/logout', (req, res) => {
 });
 
 
-// another Product Route?
-const Product = require('./models/Product');
+// another Product Route?  TODO Remove? 
+// const Product = require('./models/Product');
 
 
 // Product Routes
