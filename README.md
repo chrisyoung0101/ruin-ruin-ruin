@@ -11,55 +11,64 @@ This project is an e-commerce website that allows users to browse products, add 
 
 ## Starting the Project
 To start the project, navigate to the project directory and run:
-```bash
+bash
 node index.js
 
 
 
 Endpoints
-```GET /products: Fetch all products.
+### GET /products: Fetch all products.
 Test : 
+```bash
 curl -X GET http://localhost:3000/products
+```
 
 
-POST /products: Add a new product.
+### POST /products: Add a new product.
+
+```bash
+curl -X POST http://localhost:3000/products \
+-H "Content-Type: application/json" \
+-d '{"name": "New Product", "description": "A new product description", "price": 100, "category": "General", "imageUrl": "http://example.com/image.jpg"}
+```
+
+
+### GET /products/:id: Fetch a specific product by ID.
 Test : 
+```bash
 curl -X POST http://localhost:3000/products \
 -H "Content-Type: application/json" \
 -d '{"name": "New Product", "description": "A new product description", "price": 100, "category": "General", "imageUrl": "http://example.com/image.jpg"}'
+```
 
-GET /products/:id: Fetch a specific product by ID.
-Test : 
-curl -X POST http://localhost:3000/products \
--H "Content-Type: application/json" \
--d '{"name": "New Product", "description": "A new product description", "price": 100, "category": "General", "imageUrl": "http://example.com/image.jpg"}'
-
-GET /products/:id: Fetch a specific product by ID.
+### GET /products/:id: Fetch a specific product by ID.
+```bash
 curl -X GET http://localhost:3000/products/1234567890
+```
 
-POST /register: Register a new user.
-
-curl -X POST http://localhost:3000/register \
--H "Content-Type: application/json" \
--d '{"username": "newuser", "password": "password123"}'
+### POST /register: Register a new user.
 
 Test : 
-```
+```bash
 curl -X POST http://localhost:3000/register \
 -H "Content-Type: application/json" \
 -d '{"username": "newuser", "password": "password123"}'
 ```
 
-POST /login: Log in a user. 
+### POST /login: Log in a user. 
 Test :
+```bash
 curl -X POST http://localhost:3000/login \
 -H "Content-Type: application/json" \
 -d '{"username": "existinguser", "password": "password123"}'
+```
 
 
-GET /logout: Log out a user. 
+### GET /logout: Log out a user. 
 Test :
+```bash
 curl -X GET http://localhost:3000/logout
+```
 
 
 ## Testing Endpoints
