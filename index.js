@@ -141,6 +141,11 @@ app.get('/logout', (req, res) => {
     });
 });
 
+
+// another Product Route?
+const Product = require('./models/Product');
+
+
 // Product Routes
 app.post('/add-product', async (req, res) => {
     try {
