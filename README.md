@@ -17,7 +17,7 @@ node index.js
 
 
 Endpoints
-GET /products: Fetch all products.
+```GET /products: Fetch all products.
 Test : 
 curl -X GET http://localhost:3000/products
 
@@ -44,9 +44,11 @@ curl -X POST http://localhost:3000/register \
 -d '{"username": "newuser", "password": "password123"}'
 
 Test : 
+```
 curl -X POST http://localhost:3000/register \
 -H "Content-Type: application/json" \
 -d '{"username": "newuser", "password": "password123"}'
+```
 
 POST /login: Log in a user. 
 Test :
