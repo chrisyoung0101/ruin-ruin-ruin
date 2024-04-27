@@ -8,6 +8,7 @@ import bcrypt from 'bcryptjs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
+
 const app = express();
 const port = 3000;
 
@@ -243,3 +244,4 @@ app.get('/db-stats', async (req, res) => {
 app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}`);
 });
+
